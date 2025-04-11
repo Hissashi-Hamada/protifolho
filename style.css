@@ -42,15 +42,23 @@ body {
     height: 100vh;
 }
 
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
 .flex {
+    display: flex;}
+    .txt-topo-site{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+            
 }
-
 .contato button {
     padding: 10px 40px;
     font-size: 18px;
@@ -67,10 +75,14 @@ header {
     padding: 40px 4%;
 }
 
-header > .interface {
+header  .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+nav li a {
+    color: #fff;
 }
 
 header ul li a {
@@ -98,7 +110,21 @@ header nav ul li {
     box-shadow: rgb(52, 2, 99); /* Corrigido: antes não aplicava sombra corretamente */
 }
 
+.txt-topo-site{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+
+
 /* Estilo do Topo do Site */
+section {
+    width: 100%;
+    height: 90vh;
+}
 
 section.topo-do-site {
     margin-top: 100px;
@@ -109,11 +135,11 @@ section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
-}
+}   
 
 .topo-do-site h1 {
     color: #fff;
-    font-size: 46px;
+    font-size: 30px;
     line-height: 40px;
 }
 
@@ -142,4 +168,10 @@ section.topo-do-site .flex {
     100% {
         top: 30px;
     }
+}
+
+
+
+@media screen and (max-width: 1020px) {
+   .menu-desktop 
 }

@@ -1,0 +1,162 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes - PT Serif */
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Estilo do Body */
+body {
+    background-image: url(../img/freepik__expand__60656.png);
+    background-size: cover;         /* cobre toda a tela */
+    background-position: center;    /* centraliza a imagem */
+    background-repeat: no-repeat;   /* evita repetições */
+    background-attachment: fixed;   /* imagem fixa no fundo */
+    background-color: black;
+    height: 100vh;
+}   
+
+/* Containers */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão Contato */
+.contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600; /* Corrigido: estava "600px", o certo é só "600" */
+    background-color: rgb(255, 255, 0);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    box-shadow: 0px 0px 10px rgb(255, 255, 0); /* Corrigido para aplicar sombra corretamente */
+}
+
+/* Estilo do Cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header ul li a {
+    color: rgb(255, 255, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease; /* deixei mais suave */
+}
+
+header a:hover {
+    color:  rgb(255, 255, 0);
+    transform: scale(1.10);
+}
+
+
+/* Estilo projetos */
+
+
+
+ section .portifolho{
+    padding: 80px 4%;
+}
+
+section.portifolho .flex{
+    justify-content: center;
+gap: 80px;
+}
+
+h2{
+    color: rgb(255, 255, 0);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-port{
+    width: 75% ;
+    height:460px ;
+    background-color: rgb(255, 255, 0);
+}
+.flex{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;     
+    gap: 20px;               
+  }
+.img-port {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.img-port:hover {
+  transform: scale(1.05);
+}
+  

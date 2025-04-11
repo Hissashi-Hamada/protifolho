@@ -1,0 +1,137 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Fontes - PT Serif */
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Estilo do Body */
+body {
+    background-image: url(img/9999520.jpg);
+    background-size: cover;         /* cobre toda a tela */
+    background-position: center;    /* centraliza a imagem */
+    background-repeat: no-repeat;   /* evita repetições */
+    background-attachment: fixed;   /* imagem fixa no fundo */
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+/* Containers */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão Contato */
+.contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600; /* Corrigido: estava "600px", o certo é só "600" */
+    background-color: rgba(6, 115, 1, 0.749);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    box-shadow: 0px 0px 10px rgba(6, 115, 1, 0.749); /* Corrigido para aplicar sombra corretamente */
+}
+
+/* Estilo do Cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease; /* deixei mais suave */
+}
+
+ul a:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.10);
+}
+
+.flex { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.especialidades-box h1 {
+    font-size: 0,5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+        font-family: "PT Serif", serif;}
+
+        .lado-a-lado p {
+            font-size: 1.3rem;
+            color: #fff;
+        }
